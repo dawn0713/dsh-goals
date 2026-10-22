@@ -1,0 +1,8 @@
+# dsh-personal-goals bundle patch — the layer applied when a profile lists this bundle.
+# Install: dsh plugin --profile web add <path-or-package-name>
+- insert:
+    - id: personal-goals
+      name: 'dsh-personal-goals'
+      config:
+        maxGoals: 5
+        maxChars: 2400

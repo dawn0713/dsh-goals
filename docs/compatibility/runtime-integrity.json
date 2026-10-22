@@ -1,0 +1,19 @@
+{
+  "basis": "User-provided Goals 0.2.0 compiled distribution",
+  "runtimeUnchanged": true,
+  "sha256": {
+    "lib/client.js": "9858234d8c6ce29809e3f6c8bdb6ea2a2463a7a9c4f5fa3a65884cc5a92ad902",
+    "lib/index.d.ts": "2467c102cae13568aa6337a06e372af88334a5c994b6fb7ea6dc96691619275d",
+    "lib/index.js": "5c5142c03d4680215aeb288c619c9092be53402c4a9d40eae0057894288fa52e",
+    "lib/service/client.d.ts": "76c14958aa34e4ca6f1b883e513bcdc2e3bf0795b6ac8bef4732f7deb9051fe5",
+    "lib/service/client.js": "29c9c58209698e3bb6460fe94fb5cdb421ee4a3a360d48147cd860d1e347961b",
+    "lib/service/domain.d.ts": "f9b4ccfc6a74b859a9995d0efe8cca3b9f52fbd8fb58d6070c76d79ea414af3b",
+    "lib/service/domain.js": "9ec6a70cb3b899cd8d1529cd294e1d02c1b93295765704d062ccb1bddb3b02e6",
+    "lib/service/index.d.ts": "54b2ab9a0b11508e89a5619d5a986e99a99abb163ff0a2000de30f5d437d0928",
+    "lib/service/index.js": "ffff0237103cae0e76f91f7bbb85130ae48d8c4befeb3c11b54aace8d14ca904",
+    "lib/service/types.d.ts": "16253a02ba7fe9527d456d296dc787034ddf82ba5cee54f64ba08bc5fcf6e6d9",
+    "lib/service/types.js": "bc2738f0eade2405585048c1aad29ebb34553f5baf34513f69515dbbfdf93ad2",
+    "lib/tool/index.d.ts": "d65c0fc5e04421e35f1e1517f7f3924cd658798d452ce537c28ea52ed82ad511",
+    "lib/tool/index.js": "3b2755db6e8ad1ec5f927e8dd7af2ebf68ddb1e67f7bd819ae37782cb850bb0d"
+  }
+}
