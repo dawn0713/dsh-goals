@@ -6,7 +6,7 @@ A personal goals and condition-tracking plugin for DeepSeek Harness (DSH). Plan 
 
 ## Install
 
-Supports DSH **0.2.1-alpha.1 and 0.2.1-alpha.2 Web** with one package. Requires Node.js `^22.19.0 || >=24.0.0` and a configured model for conversational planning.
+Supports DSH **0.2.1-alpha.1, 0.2.1-alpha.2, and 0.2.1-rc.2 Web** with one package. Requires Node.js `^22.19.0 || >=24.0.0` and a configured model for conversational planning.
 
 Paste this URL into DSH **Plugins → Add plugin**, or use the CLI:
 
@@ -29,7 +29,7 @@ Goals works independently. Install [Ideas](https://github.com/dawn0713/dsh-ideas
 
 Data is stored in `$DSH_HOME/storages/personal_goals.json`, normally `~/.dsh/storages/personal_goals.json`. Planning and observations use the model configured in DSH. The UI refreshes about every five seconds. Overall goal completion, archiving, and deletion require user confirmation in the UI.
 
-This repository distributes the compiled Goals 0.2.0 implementation with dual-version packaging. It does not include the original upstream TypeScript build project. Runtime code is unchanged.
+This repository distributes the compiled Goals 0.2.0 implementation with alpha / rc.2 compatibility packaging. It does not include the original upstream TypeScript build project. Runtime code is unchanged.
 
 See [verification](docs/VERIFICATION.md), [release instructions](docs/RELEASING.md), and [changelog](CHANGELOG.md).
 
