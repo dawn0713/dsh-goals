@@ -1,6 +1,6 @@
 {
   "name": "dsh-personal-goals",
-  "version": "0.2.3-dsh.0.2.1",
+  "version": "0.2.4-dsh.0.2.1",
   "description": "Goals 个人目标与条件追踪；支持 DSH 0.2.1-alpha.1 / alpha.2 / rc.2 Web",
   "type": "module",
   "main": "lib/index.js",

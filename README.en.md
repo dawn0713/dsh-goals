@@ -12,36 +12,53 @@ A personal goals and condition-tracking plugin for DeepSeek Harness (DSH). It ke
 
 You do not start by choosing a feature or filling a parameter form. Describe what you want to move forward or watch; the agent asks one open question first, then follows your answer.
 
-![Goals page with goals and tracking](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-fitness.png)
+![Goals page: the red box marks the first click](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-step-1.png)
 
-## Example: an 8-week fitness goal
+## Walkthrough: an 8-week fitness goal
 
-Pick “Health & fitness”, or use “Something else” and describe it yourself. The agent starts with one open question about what you want to move forward, then asks only the missing details about your current state, time, equipment, and deadline before breaking the work into ordered steps.
+The red box in each image marks what to click.
 
-The screenshot shows an 8-week fat-loss starter plan: 2–3 hours per week at home, starting with baseline measurements and brisk-walk adaptation, then strength work and a final review. The goal survives across sessions.
+**Step 1: click “Health & fitness”**
 
-- Steps can be completed one by one or added later.
-- A weekly review is scheduled in the original conversation.
-- Complete, archive, and delete require explicit confirmation on the page.
-- Ask for changes in chat (“change step 2 to…”) and the agent edits the existing plan.
+![Step 1: click Health & fitness](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-step-1.png)
 
-## Example: G.E.M. tour announcement tracking
+**Step 2: answer one question**
 
-![G.E.M. tour tracking](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-gem.png)
+The agent does not dump a full questionnaire. It asks one question first. If it finds a similar existing plan, it asks how this request relates to that plan instead of duplicating it.
 
-Tracking is more than a reminder. It stores the condition, cadence, preferred sources, and every observation.
+![Step 2: answer one question](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-step-2.png)
 
-This tracking watches the next tour announcement, cities, dates, and ticket-sale information:
+Choose “Continue the existing plan and restart W1 this week” and submit. With no existing plan, this becomes an open “what do you want to move forward?” question, and later questions follow the answer.
 
-- Weekly checks, expiring 2027-12-31.
-- Preferred sources include Damai, Fenwandao, Maoyan, Weibo, and the official tour page.
-- The first check runs immediately after creation, not one cadence later.
+**Step 3: open the goal and review its steps**
 
-The first check found that the previous tour had finished and the next one had not been announced. It recorded that non-match, along with source failures such as the JS-rendered Damai search page, in the observation history.
+![Step 3: select the goal and review steps](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-step-3.png)
+
+Select the goal on the left (box 3); the right panel shows the definition of done, every step, and pause, resume, complete, archive, and delete actions (box 4). The example is an 8-week fat-loss starter plan: 2–3 hours per week at home, from baseline measurements and brisk-walk adaptation to strength work and a final review.
+
+## Walkthrough: G.E.M. tour tracking
+
+**Step 1: click “Condition tracking”**
+
+![Step 1: click Condition tracking](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-step-1.png)
+
+**Step 2: say what to watch**
+
+The agent asks one open question: what do you want to watch, and what change should trigger a notification? It does not start with cadence and expiry.
+
+![Step 2: say what to watch](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-step-2.png)
+
+Enter “G.E.M. next tour announcement and ticket sales; weekly; expire 2027-12-31; preferred sources Damai, Fenwandao, Maoyan, Weibo” and submit.
+
+**Step 3: open the tracking detail**
+
+![Step 3: select the tracking and review history](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-step-3.png)
+
+Select it under “Active tracking” (box 3); the detail shows the condition, cadence, preferred sources, last observation, and observation history (box 4). The first check runs immediately after creation, not one cadence later; source failures are recorded in the history.
 
 ## Example: China Mobile stock price
 
-![China Mobile stock tracking](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-stock.png)
+![China Mobile stock tracking steps](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/tracking-stock-steps.png)
 
 This tracking uses a numeric threshold:
 
