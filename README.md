@@ -124,17 +124,25 @@ dsh plugin --profile web add "/path/to/dsh-goals.tgz"
 
 ## 与 Ideas 联动
 
-配套插件：[dsh-ideas](https://github.com/dawn0713/dsh-ideas)。
+配套插件：[dsh-ideas](https://github.com/dawn0713/dsh-ideas)。Ideas 读取 Goals 的未完成步骤并生成建议；用户确认完成后，只回写关联的那一个步骤。
+
+### 第 1 步：在 Ideas 打开「进行中」
 
 ![Ideas 根据目标生成建议](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/ideas-link.png)
 
-```text
-Goals 未完成步骤 → Ideas 建议卡片 → 聊天执行与完成核验
-       ↑                                  │
-       └──────── 对应步骤标记为已完成 ──────┘
-```
+选择关联了 Goals 步骤的建议，例如「确认吉他设备并定 3 个练习档期与基线」，它对应「8 周吉他重启」的 W1 步骤。
 
-Ideas 可以读取 Goals 的进展，把未完成步骤变成具体行动建议。用户确认完成后，Ideas 只回写关联的单个步骤；不会替用户完成整个目标，也不会批量回写历史完成记录。同步失败会保留完成记录、显示原因并支持重试。
+### 第 2 步：点「确认完成」，填写完成说明
+
+![Ideas 完成后显示已同步](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/ideas-synced.png)
+
+保存后，卡片显示 **“已同步：Goals 中的关联步骤已完成。”** 同步失败会保留完成记录、显示原因并支持重试。
+
+### 第 3 步：回到 Goals，对应步骤已经打勾
+
+![Goals 对应步骤已完成](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-completed.png)
+
+Goals 只把对应步骤标记完成，整个目标仍由你在 Goals 页面确认完成；旧版历史完成记录不会批量回写。
 
 安装 Ideas：
 

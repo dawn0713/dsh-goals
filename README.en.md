@@ -93,17 +93,25 @@ Restart `dsh web` and refresh the page. A **个人目标** entry appears in the 
 
 ## Ideas integration
 
-Companion plugin: [dsh-ideas](https://github.com/dawn0713/dsh-ideas).
+Companion plugin: [dsh-ideas](https://github.com/dawn0713/dsh-ideas). Ideas reads unfinished Goals steps and turns them into suggestions. When the user confirms completion, only the matching step is written back.
+
+### Step 1: open an in-progress Idea
 
 ![Ideas recommendations based on goals](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/ideas-link.png)
 
-```text
-Goals unfinished steps → Ideas cards → execute and verify in chat
-        ↑                                      │
-        └──── mark the matching step done ─────┘
-```
+Pick a suggestion linked to a Goals step, such as “confirm the guitar setup and set three practice slots and a baseline”, which belongs to W1 of the 8-week guitar plan.
 
-Ideas reads Goals progress and turns unfinished steps into concrete suggestions. When the user confirms completion, Ideas writes back only the matching step; it never completes the whole goal or backfills historical completions. A failed synchronization keeps the completion record, shows the reason, and supports retry.
+### Step 2: click “Mark complete” and add a note
+
+![Ideas shows the Goals sync is complete](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/ideas-synced.png)
+
+After saving, the card shows **“Synced: the linked Goals step is complete.”** A failed sync keeps the completion record, shows the reason, and supports retry.
+
+### Step 3: return to Goals and see the step checked
+
+![The matching Goals step is complete](https://raw.githubusercontent.com/dawn0713/dsh-goals/main/docs/images/goal-completed.png)
+
+Goals marks only the matching step done. The whole goal still requires your confirmation in Goals, and historical completions are not backfilled.
 
 ```sh
 dsh plugin --profile web add "https://github.com/dawn0713/dsh-ideas/releases/latest/download/dsh-ideas.tgz"
