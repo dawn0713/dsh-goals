@@ -1,0 +1,11 @@
+{
+  "host": "2",
+  "registeredGoalTools": 9,
+  "visibleToModel": true,
+  "realAgentToolCall": true,
+  "persistedGoal": true,
+  "taskCount": 3,
+  "goalStatus": "active",
+  "survivesRestart": true,
+  "paidModelCalls": 0
+}

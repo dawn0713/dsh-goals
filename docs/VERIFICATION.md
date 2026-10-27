@@ -1,20 +1,13 @@
-# 验证记录
+# Goals 0.2.6 验证
 
-验证日期：2026-10-23。本次实际安装包：Ideas 0.4.10-dsh.0.2.1、Goals 0.2.5-dsh.0.2.1。
+2026-10-27。修复后的运行时代码与本机已经安装并验证的 0.2.4 修复包一致；版本递增至 0.2.6，以保留远端 0.2.5 文档更新。
 
-| 检查 | alpha.1 | alpha.2 | rc.2 |
-| --- | --- | --- | --- |
-| 官方 CLI 安装实际 tgz（离线） | 通过 | 通过 | 通过 |
-| 官方兼容检查，无版本豁免 | 通过 | 通过 | 通过 |
-| Web profile 配置合成与实际启动 | 通过 | 通过 | 通过 |
-| Goals 创建目标、步骤及读取状态 | 通过 | 通过 | 通过 |
-| Ideas 完成后回写关联 Goals 步骤 | 通过 | 通过 | 通过 |
-| 其他步骤、整个目标状态保持不变 | 通过 | 通过 | 通过 |
-| 重复读取不重复写入完成状态 | 通过 | 通过 | 通过 |
-| tgz 包含卡片高度与同步状态界面 | 通过 | 通过 | 通过 |
+alpha.1、alpha.2、rc.2 均验证：九个目标工具成功注册并提供给模型；模拟模型通过真实 Agent 流程调用 personal_goal_create；目标与三个步骤实际写入 JSON 存储；关闭并重建服务后目标仍可读取。
 
-Goals 0.2.5 的运行时与 0.2.3 一致，本次只更新 Ideas 同步示例和文档；0.2.3 已在 DSH 0.2.1-rc.2 上完成安装、启动、目标/追踪创建与页面验证。alpha.1 / alpha.2 的安装兼容声明保留，但本次未重新执行三宿主矩阵。
+结果：[alpha.1](compatibility/model-tools-alpha1.json)、[alpha.2](compatibility/model-tools-alpha2.json)、[rc.2](compatibility/model-tools-rc2.json)。回归用例见 tests/model-goal-registration.test.mjs，安装开发依赖后执行 npm test。
 
-两个插件的功能源码和编译产物均与上次发布保持一致，宿主依赖交给各版本 DSH 提供；Goals 继续内置 Zod 4.4.3。结果见 [alpha.1](compatibility/alpha1.json)、[alpha.2](compatibility/alpha2.json)、[rc.2](compatibility/rc2.json)。
+使用隔离 Context、临时存储与模拟模型，不访问个人目标，不产生模型费用。排程边界使用测试替身，未验证真实模型追问效果或长期监控。
 
-三个官方宿主均使用独立 DSH_HOME、Ideas dataDir 和示例数据；关闭自动推荐和开发热更新扫描，没有调用付费模型或读取个人数据。测试主机为 macOS x86_64、Node.js 26.1.0，未额外验证 Desktop profile、其他操作系统或真实模型驱动的长期排程。
+中英文 README 的 Git blob 摘要与发布前远端完全一致；示例图片通过沿用远端基线文件树保留。
+
+最终 tgz 另通过三个版本的官方 CLI 安装、Web 启动、Goals 读写与 Ideas 0.4.11 完成回写验证，未使用版本豁免。记录：[alpha.1](compatibility/install-alpha1.json)、[alpha.2](compatibility/install-alpha2.json)、[rc.2](compatibility/install-rc2.json)。

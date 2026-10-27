@@ -1,0 +1,18 @@
+{
+  "dsh": "0.2.1-rc.2",
+  "officialCliInstallation": true,
+  "compatibilityAccepted": true,
+  "dumpConfig": true,
+  "webBoot": true,
+  "goalsVersion": "0.2.6-dsh.0.2.1",
+  "ideasVersion": "0.4.11-dsh.0.2.1",
+  "chatHeaderEntryRemoved": true,
+  "goalsReadWrite": true,
+  "ideasCompletionSync": "synced",
+  "completedTasks": 1,
+  "remainingTasks": 1,
+  "goalStatus": "active",
+  "noRepeatWrite": true,
+  "layoutAndSyncClientIncluded": true,
+  "noVersionExemption": true
+}
